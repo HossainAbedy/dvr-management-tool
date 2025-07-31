@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions 
+  xmlns:tns="http://www.onvif.org/ver10/device/wsdl"
+  xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+  xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  targetNamespace="http://www.onvif.org/ver10/device/wsdl"
+  xmlns="http://schemas.xmlsoap.org/wsdl/">
+
+  <types>
+    <xs:schema targetNamespace="http://www.onvif.org/ver10/device/wsdl" elementFormDefault="qualified">
+      <xs:element name="GetUsers">
+        <xs:complexType/>
+      </xs:element>
+      <xs:element name="GetUsersResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="User" maxOccurs="unbounded">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Username" type="xs:string"/>
+                  <xs:element name="Password" type="xs:string" minOccurs="0"/>
+                  <xs:element name="UserLevel" type="xs:string"/>
+                  <xs:element name="Enabled" type="xs:boolean"/>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+
+      <xs:element name="SetUser">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Username" type="xs:string"/>
+            <xs:element name="Password" type="xs:string"/>
+            <xs:element name="UserLevel" type="xs:string"/>
+            <xs:element name="Enabled" type="xs:boolean"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+
+      <xs:element name="SetUserResponse">
+        <xs:complexType/>
+      </xs:element>
+    </xs:schema>
+  </types>
+
+  <message name="GetUsersRequest"/>
+  <message name="GetUsersResponse">
+    <part name="parameters" element="tns:GetUsersResponse"/>
+  </message>
+
+  <message name="SetUserRequest">
+    <part name="parameters" element="tns:SetUser"/>
+  </message>
+  <message name="SetUserResponse"/>
+
+  <portType name="DevicePort">
+    <operation name="GetUsers">
+      <input message="tns:GetUsersRequest"/>
+      <output message="tns:GetUsersResponse"/>
+    </operation>
+    <operation name="SetUser">
+      <input message="tns:SetUserRequest"/>
+      <output message="tns:SetUserResponse"/>
+    </operation>
+  </portType>
+
+  <binding name="DeviceBinding" type="tns:DevicePort">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <operation name="GetUsers">
+      <soap:operation soapAction="http://www.onvif.org/ver10/device/wsdl/GetUsers"/>
+      <input><soap:body use="literal"/></input>
+      <output><soap:body use="literal"/></output>
+    </operation>
+    <operation name="SetUser">
+      <soap:operation soapAction="http://www.onvif.org/ver10/device/wsdl/SetUser"/>
+      <input><soap:body use="literal"/></input>
+      <output><soap:body use="literal"/></output>
+    </operation>
+  </binding>
+
+  <service name="DeviceService">
+    <port name="DevicePort" binding="tns:DeviceBinding">
+      <soap:address location="http://localhost/onvif/device_service"/>
+    </port>
+  </service>
+</definitions>

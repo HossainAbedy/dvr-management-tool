@@ -1,0 +1,22 @@
+├── backend/
+|   
+│   ├── __init__.py
+│   ├── config.py
+│   ├── utils.py
+│   ├── run.py
+│   ├── routes/
+│   │   ├── __init__.py
+│   │   ├── sync.py
+│   │   ├── export.py
+│   │   └── change_password.py
+│   └── scripts
+│   └── venv
+│   └── wsdl
+│   └── app.py
+│   └── requirements.txt
+└── frontend/
+└── Backup_30.07.2025/
+└── run.txt
+
+
+
