@@ -1,3 +1,4 @@
+#routes/info.py
 from flask import Blueprint, request, jsonify
 from services.dvr_info import DVRInfoService
 from utils import generate_ips  # Adjusted to absolute import if app root is `backend/`

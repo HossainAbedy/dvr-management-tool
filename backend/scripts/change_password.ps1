@@ -1,3 +1,4 @@
+#scripts/change_password.ps1
 param (
     [string]$ip,
     [string]$user,

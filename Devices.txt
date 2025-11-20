@@ -1,0 +1,86 @@
+[
+    {
+        "name": "K40 Lobby Khulna Branch",
+        "ip_address": "172.19.106.231",
+        "port": 4370,
+        "serial_no": "CQQC225261106"
+    },
+    {
+        "name": "K40 Lobby Katakhali Branch",
+        "ip_address": "172.19.107.231",
+        "port": 4370,
+        "serial_no": "CQQC225261107"
+    },
+    {
+        "name": "K40 Lobby Keraniganj Branch",
+        "ip_address": "172.19.108.231",
+        "port": 4370,
+        "serial_no": "CQQC225261108"
+    },
+    {
+        "name": "K40 Lobby Uttara Branch",
+        "ip_address": "172.19.109.231",
+        "port": 4370,
+        "serial_no": "CQQC225261109"
+    },
+    {
+        "name": "K40 Lobby Gulshan Branch",
+        "ip_address": "172.19.110.231",
+        "port": 4370,
+        "serial_no": "CQQC225261110"
+    },
+    {
+        "name": "K40 Lobby Velanagar Branch",
+        "ip_address": "172.19.111.231",
+        "port": 4370,
+        "serial_no": "CQQC225261111"
+    },
+    {
+        "name": "K40 Lobby Imamganj Branch",
+        "ip_address": "172.19.112.231",
+        "port": 4370,
+        "serial_no": "CQQC225261112"
+    },
+    {
+        "name": "K40 Lobby Ashulia Branch",
+        "ip_address": "172.19.113.231",
+        "port": 4370,
+        "serial_no": "CQQC225261113"
+    },
+    {
+        "name": "K40 Lobby Dhanmondi Branch",
+        "ip_address": "172.19.114.231",
+        "port": 4370,
+        "serial_no": "CQQC225261114"
+    },
+    {
+        "name": "K40 Lobby Sylhet Branch",
+        "ip_address": "172.19.116.231",
+        "port": 4370,
+        "serial_no": "CQQC225261116"
+    },
+    {
+        "name": "K40 Lobby Jubilee Branch",
+        "ip_address": "172.19.117.231",
+        "port": 4370,
+        "serial_no": "CQQC225261117"
+    },
+    {
+        "name": "K40 Lobby Bogra Branch",
+        "ip_address": "172.19.118.231",
+        "port": 4370,
+        "serial_no": "CQQC225261118"
+    },
+    {
+        "name": "K40 Lobby Mawna Branch",
+        "ip_address": "172.19.119.231",
+        "port": 4370,
+        "serial_no": "CQQC225261119"
+    },
+    {
+        "name": "K40 Lobby Islampur Branch",
+        "ip_address": "172.19.120.231",
+        "port": 4370,
+        "serial_no": "CQQC225261120"
+    }
+]
